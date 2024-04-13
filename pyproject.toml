@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "modul-7"
+version = "0.1.0"
+description = ""
+authors = ["Oleksandr_Skuz <138138803+OleksandrSkuz1@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
