@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 USER = 'alex'
 PASSWORD = 'alex'
 HOST = 'localhost'
-DATABASE = 'postgres-container'
+DATABASE = 'postgres'
 PORT = 5432
 
 #URL: postgresql://username:password@host:port/database
