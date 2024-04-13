@@ -1,4 +1,6 @@
 from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
 
 USER = 'alex'
 PASSWORD = 'alex'
@@ -6,8 +8,12 @@ HOST = 'localhost'
 DATABASE = 'postgres-container'
 PORT = 5432
 
+#URL: postgresql://username:password@host:port/database
 URL = f'postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}'
 
-engine = create_engine(URL, echo=True)
+engine = create_engine(URL, echo=True, pool_size=5, max_overflow=0)
 
-#C:\Users\admin\Desktop\GoIT\Home Work WEB\MODUL_7
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+
+print(URL)
