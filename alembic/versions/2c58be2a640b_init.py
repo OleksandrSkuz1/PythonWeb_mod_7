@@ -54,11 +54,11 @@ def upgrade() -> None:
     sa.ForeignKeyConstraint(['subject_id'], ['Subjects.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
-    op.drop_table('teachers')
-    op.drop_table('grades')
-    op.drop_table('subjects')
-    op.drop_table('groups')
-    op.drop_table('students')
+    #op.drop_table('teachers')
+    #op.drop_table('grades')
+    #op.drop_table('subjects')
+    #op.drop_table('groups')
+    #op.drop_table('students')
     # ### end Alembic commands ###
 
 
